@@ -58,8 +58,8 @@ def preprocess_text(text):
 
 def load_chapter_data(chapter_name):
     try:
-        pdf_path = f'data\\chapters\\{chapter_name}.pdf'
-        index_path = f'data\\indices\\{chapter_name}'
+        pdf_path = f'bio_bot/data/chapters/{chapter_name}.pdf'
+        index_path = f'bio_bot/data/indices/{chapter_name}'
 
         if not os.path.exists(pdf_path):
             raise FileNotFoundError(f"❌ {pdf_path}")
