@@ -1,0 +1,13 @@
+langchain 
+langchain-core 
+langchain-community 
+langchain-groq 
+pypdf 
+sentence_transformers 
+pymupdf 
+langchain_experimental 
+rank_bm25 
+faiss-cpu 
+langchain-huggingface 
+streamlit
+torch
