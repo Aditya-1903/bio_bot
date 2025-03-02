@@ -59,6 +59,8 @@ def preprocess_text(text):
 
 def load_chapter_data(chapter_name):
     try:
+        BASE_DIR = Path(__file__).parent
+
         pdf_path = BASE_DIR / "data" / "chapters" / f'{chapter_name}.pdf'
         index_path = BASE_DIR / "data" / "indices" / f'{chapter_name}'
 
