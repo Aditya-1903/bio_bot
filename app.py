@@ -8,6 +8,8 @@ st.set_page_config(page_title="BioBot", page_icon="🧬", initial_sidebar_state=
 st.title("🧬 BioBot - Class 12 Biology Tutor")
 st.markdown('<span style="font-size: 22px;">Your AI-powered study buddy!</span>', unsafe_allow_html=True)
 
+st.markdown('<span style="font-size: 22px;">Due to Resource Limitations, following chapters are currently not supported: 1,2,4,6,8</span>', unsafe_allow_html=True)
+
 st.header("📚 Table of Contents")
 st.markdown("""
     <style>
