@@ -2,6 +2,7 @@ import os
 import re
 import torch
 import warnings
+from pathlib import Path
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_retrieval_chain, create_history_aware_retriever
@@ -58,8 +59,10 @@ def preprocess_text(text):
 
 def load_chapter_data(chapter_name):
     try:
-        pdf_path = f'aditya-1903/bio_bot/main/data/chapters/{chapter_name}.pdf'
-        index_path = f'aditya-1903/bio_bot/main/data/indices/{chapter_name}'
+        BASE_DIR = Path(__file__).parent
+        
+        pdf_path = BASE_DIR / "data" / "chapters" / f'{chapter_name}.pdf'
+        index_path = BASE_DIR / "data" / "chapters" / f'{chapter_name}'
 
         if not os.path.exists(pdf_path):
             raise FileNotFoundError(f"❌ {pdf_path}")
